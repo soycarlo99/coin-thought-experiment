@@ -11,7 +11,7 @@ const CoinStatus = {
 };
 
 function App() {
-  const [initialCoinCount, setInitialCoinCount] = useState(25);
+  const [initialCoinCount, setInitialCoinCount] = useState(500);
   const [coins, setCoins] = useState([]);
   const [roundNumber, setRoundNumber] = useState(0);
   const [activeCoinCount, setActiveCoinCount] = useState(0);
@@ -43,7 +43,7 @@ function App() {
   const handleNumberChange = (event) => {
     if (isSimulating) return;
     const value = parseInt(event.target.value, 10);
-    setInitialCoinCount(isNaN(value) || value < 1 ? 1 : Math.min(value, 1000));
+    setInitialCoinCount(isNaN(value) || value < 1 ? 1 : Math.min(value, 10000));
   };
 
   const runSimulation = useCallback(async () => {
@@ -193,9 +193,10 @@ function App() {
   return (
     <div className="App">
       {" "}
-      <h1>Sequential Coin Flip Elimination</h1>
+      <h1>Sequential Coin Flip</h1>
+      <div class="title-coin"></div>
       <p className="subtitle">
-        Coins landing Tails are removed each round. Watch the decay!
+        Simulates Neil deGrasse Tyson's thought experiment
       </p>
       <div className="controls">
         <label htmlFor="numberOfCoinsInput">Start with Coins:</label>

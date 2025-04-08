@@ -22,7 +22,7 @@
   --coin-size: 32px;
   --coin-border-color: #505863;
   --coin-active-bg: #6e7681;
-  --coin-heads-bg: linear-gradient(135deg, #f7b733, #fc4a1a);
+  --coin-heads-bg: linear-gradient(135deg, #f7b733, #f7b733);
   --coin-tails-bg: linear-gradient(135deg, #bdc3c7, #2c3e50);
   --coin-out-bg: #252a30;
   --coin-out-opacity: 0.3;
@@ -399,4 +399,174 @@ h3 {
 
 .controls input[type="number"] {
   -moz-appearance: textfield;
+}
+
+/*COIN FROM PENCODE */
+
+:root {
+  --face: #be9d66;
+  --lowlight: #111;
+  --side: #896c3b;
+  --side-dark: #120e08;
+  --title-coin-size: 10rem;
+  --title-coin-face: url("https://sdbullion.com/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/2/0/2019-roaring-lion-silver-coin-obverse-sd-bullion.jpg");
+}
+
+.title-coin {
+  height: var(--title-coin-size);
+  /* width: var(--title-coin-size); */
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-coin::before {
+  content: "";
+  display: block;
+  position: relative;
+  height: var(--title-coin-size);
+  width: var(--title-coin-size);
+  border-radius: 50%;
+  background-color: var(--face);
+  animation: spin 1s linear infinite;
+  background-image: var(--title-coin-face);
+  background-size: 100% 100%;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.title-coin.flip::before {
+  animation-name: flip;
+}
+
+.title-coin.copper::before {
+  filter: hue-rotate(-40deg) brightness(0.75) contrast(115%);
+  animation-delay: -0.25s;
+}
+
+.title-coin.silver::before {
+  filter: saturate(0);
+  animation-delay: -0.5s;
+}
+
+/* animation definitions */
+
+@keyframes spin {
+  0% {
+    width: var(--title-coin-size);
+    box-shadow: 0 0 0 var(--side-dark);
+    animation-timing-function: ease-in;
+  }
+
+  49.999% {
+    width: 0.1rem;
+    box-shadow:
+      0.05rem 0 0 var(--side),
+      0.1rem 0 0 var(--side),
+      0.15rem 0 0 var(--side),
+      0.2rem 0 0 var(--side),
+      0.25rem 0 0 var(--side),
+      0.3rem 0 0 var(--side),
+      0.35rem 0 0 var(--side),
+      0.4rem 0 0 var(--side),
+      0.45rem 0 0 var(--side),
+      0.5rem 0 0 var(--side),
+      0.55rem 0 0 var(--side),
+      0.6rem 0 0 var(--side),
+      0.65rem 0 0 var(--side),
+      0.7rem 0 0 var(--side),
+      0.75rem 0 0 var(--side);
+    transform: translateX(-0.375rem);
+    background-color: var(--lowlight);
+    animation-timing-function: linear;
+  }
+
+  50.001% {
+    width: 0.1rem;
+    box-shadow:
+      -0.05rem 0 0 var(--side),
+      -0.1rem 0 0 var(--side),
+      -0.15rem 0 0 var(--side),
+      -0.2rem 0 0 var(--side),
+      -0.25rem 0 0 var(--side),
+      -0.3rem 0 0 var(--side),
+      -0.35rem 0 0 var(--side),
+      -0.4rem 0 0 var(--side),
+      -0.45rem 0 0 var(--side),
+      -0.5rem 0 0 var(--side),
+      -0.55rem 0 0 var(--side),
+      -0.6rem 0 0 var(--side),
+      -0.65rem 0 0 var(--side),
+      -0.7rem 0 0 var(--side),
+      -0.75rem 0 0 var(--side);
+    transform: translateX(0.375rem);
+    background-color: var(--lowlight);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    width: var(--title-coin-size);
+    box-shadow: 0 0 0 var(--side-dark);
+  }
+}
+
+@keyframes flip {
+  0% {
+    height: var(--title-coin-size);
+    box-shadow: 0 0 0 var(--side-dark);
+    animation-timing-function: ease-in;
+  }
+
+  49.999% {
+    height: 0.1rem;
+    box-shadow:
+      0 0.05rem 0 var(--side),
+      0 0.1rem 0 var(--side),
+      0 0.15rem 0 var(--side),
+      0 0.2rem 0 var(--side),
+      0 0.25rem 0 var(--side),
+      0 0.3rem 0 var(--side),
+      0 0.35rem 0 var(--side),
+      0 0.4rem 0 var(--side),
+      0 0.45rem 0 var(--side),
+      0 0.5rem 0 var(--side),
+      0 0.55rem 0 var(--side),
+      0 0.6rem 0 var(--side),
+      0 0.65rem 0 var(--side),
+      0 0.7rem 0 var(--side),
+      0 0.75rem 0 var(--side);
+    transform: translateY(-0.375rem);
+    background-color: var(--lowlight);
+    animation-timing-function: linear;
+  }
+
+  50.001% {
+    height: 0.1rem;
+    box-shadow:
+      0 -0.05rem 0 var(--side),
+      0 -0.1rem 0 var(--side),
+      0 -0.15rem 0 var(--side),
+      0 -0.2rem 0 var(--side),
+      0 -0.25rem 0 var(--side),
+      0 -0.3rem 0 var(--side),
+      0 -0.35rem 0 var(--side),
+      0 -0.4rem 0 var(--side),
+      0 -0.45rem 0 var(--side),
+      0 -0.5rem 0 var(--side),
+      0 -0.55rem 0 var(--side),
+      0 -0.6rem 0 var(--side),
+      0 -0.65rem 0 var(--side),
+      0 -0.7rem 0 var(--side),
+      0 -0.75rem 0 var(--side);
+    transform: translateY(0.375rem);
+    background-color: var(--lowlight);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    height: var(--title-coin-size);
+    box-shadow: 0 0 0 var(--side-dark);
+  }
 }
