@@ -198,6 +198,25 @@ function App() {
       <p className="subtitle">
         Simulates Neil deGrasse Tyson's thought experiment
       </p>
+      <div className="link-to-video">
+        <a href="https://www.youtube.com/shorts/IcE7frj76kY">
+          inspired by this video &nbsp;
+        </a>
+        <i
+          class="fa fa-youtube-play"
+          style={{ fontSize: "48px", color: "red" }}
+        ></i>
+      </div>
+      <p className="performance-note">
+        Inspired by Neil deGrasse Tyson's thought experiment, this simulation
+        starts with 1,000 participants flipping a fair coin. Each round, those
+        who flip tails are eliminated, while those who flip heads continue. The
+        process repeats until only one person remains, having flipped heads
+        consecutively in every round. While the outcome may seem extraordinary,
+        it highlights the inevitability of such results given enough
+        participants and trials. This project demonstrates concepts of
+        probability and randomness in a simple yet fascinating way.
+      </p>
       <div className="controls">
         <label htmlFor="numberOfCoinsInput">Start with Coins:</label>
         <input
