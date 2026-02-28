@@ -40,4 +40,4 @@ This project simulates a thought experiment inspired by Neil deGrasse Tyson, dem
 
 ## Video Inspiration
 
-*   [https://www.youtube.com/shorts/IcE7frj76kY](https://www.youtube.com/shorts/IcE7frj76kY)
+<a href="https://www.youtube.com/shorts/IcE7frj76kY"><img src="Neil-deGrasse-Tyson-2018.webp" alt="Neil deGrasse Tyson" width="80" /></a> [Watch the video](https://www.youtube.com/shorts/IcE7frj76kY)
