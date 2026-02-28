@@ -1,5 +1,7 @@
 # Sequential Coin Flip Simulation
 
+<a href="https://www.youtube.com/shorts/IcE7frj76kY"><img src="Neil-deGrasse-Tyson-2018.webp" alt="Neil deGrasse Tyson" width="200" /></a> [Watch the video](https://www.youtube.com/shorts/IcE7frj76kY)
+
 ![Screenshot of Sequential Coin Flip Simulation](ndt-coin.png)
 
 ## Description
@@ -8,16 +10,16 @@ This project simulates a thought experiment inspired by Neil deGrasse Tyson, dem
 
 ## Features
 
-*   **Adjustable Coin Count:** Set the initial number of coins (participants) to start the simulation.
-*   **Simulation Control:** Start, reset, and observe the simulation in real-time.
-*   **Visual Representation:** Coins are visually displayed, showing their status (active, flipping, heads, tails, out).
-*   **Round History:** Track the results of each round, including the number of heads and tails.
-*   **Dynamic Messages:** Get real-time updates and messages about the simulation's progress.
+- **Adjustable Coin Count:** Set the initial number of coins (participants) to start the simulation.
+- **Simulation Control:** Start, reset, and observe the simulation in real-time.
+- **Visual Representation:** Coins are visually displayed, showing their status (active, flipping, heads, tails, out).
+- **Round History:** Track the results of each round, including the number of heads and tails.
+- **Dynamic Messages:** Get real-time updates and messages about the simulation's progress.
 
 ## Technologies Used
 
-*   React
-*   CSS
+- React
+- CSS
 
 ## How to Run the Simulation
 
@@ -35,9 +37,9 @@ This project simulates a thought experiment inspired by Neil deGrasse Tyson, dem
 
 ## Notes
 
-*   The simulation is purely for demonstration purposes, showcasing probability and randomness.
-*   Increasing the number of coins may impact performance due to the visual representation of each coin.
+- The simulation is purely for demonstration purposes, showcasing probability and randomness.
+- Increasing the number of coins may impact performance due to the visual representation of each coin.
 
 ## Video Inspiration
 
-<a href="https://www.youtube.com/shorts/IcE7frj76kY"><img src="Neil-deGrasse-Tyson-2018.webp" alt="Neil deGrasse Tyson" width="80" /></a> [Watch the video](https://www.youtube.com/shorts/IcE7frj76kY)
+- [Watch the video](https://www.youtube.com/shorts/IcE7frj76kY)

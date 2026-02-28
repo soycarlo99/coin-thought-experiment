@@ -198,14 +198,13 @@ function App() {
       <p className="subtitle">
         Simulates Neil deGrasse Tyson's thought experiment
       </p>
-      <div className="link-to-video">
-        <a href="https://www.youtube.com/shorts/IcE7frj76kY">
-          inspired by this video &nbsp;
-        </a>
-        <i
-          class="fa fa-youtube-play"
-          style={{ fontSize: "48px", color: "red" }}
-        ></i>
+      <div className="video-embed">
+        <iframe
+          src="https://www.youtube.com/embed/IcE7frj76kY"
+          title="Neil deGrasse Tyson - Coin Flip Thought Experiment"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
       </div>
       <p className="performance-note">
         Inspired by Neil deGrasse Tyson's thought experiment, this simulation
