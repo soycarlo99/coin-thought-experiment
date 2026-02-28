@@ -1,5 +1,7 @@
 # Sequential Coin Flip Simulation
 
+![Screenshot of Sequential Coin Flip Simulation](ndt-coin.png)
+
 ## Description
 
 This project simulates a thought experiment inspired by Neil deGrasse Tyson, demonstrating probability and statistical inevitability through a coin flip game. Starting with a set number of participants (coins), each round involves flipping a coin for every active participant. Those who flip tails are eliminated, while those who flip heads advance to the next round. This process repeats until only one participant remains or all participants are eliminated.
